@@ -4,7 +4,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context="com.makeitdouble.coffeeland.MainActivity">
 
     <ImageView
@@ -15,155 +14,95 @@
         android:id="@+id/imageView" />
 
     <TextView
-        android:text="Information"
-        android:textColor="#292021"
-        android:textSize="20sp"
-        android:background="#e1d9ce"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/title_info"
+        android:background="@color/colorTitleBackground"
         android:layout_below="@id/imageView"
-        android:padding="16dp"
-        android:id="@+id/textViewTitle"/>
+        android:id="@+id/textViewTitle"
+        style="@style/TextViewTitleStyle"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/textViewTitle"
-        android:adjustViewBounds="true"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
         android:src="@drawable/ic_location2"
-        android:id="@+id/imageViewLocation" />
+        android:id="@+id/imageViewLocation"
+        android:layout_marginTop="8dp"
+        style="@style/ImageViewItemStyle"/>
 
     <TextView
-        android:text="New York, NY 10004, USA"
-        android:textColor="#292021"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/location_info"
         android:layout_toRightOf="@id/imageViewLocation"
         android:layout_alignBottom = "@id/imageViewLocation"
         android:layout_below="@id/textViewTitle"
-        android:paddingTop="16dp"
-        android:paddingLeft="8dp"
-        android:id="@+id/textViewLocation"/>
+        android:layout_marginTop="8dp"
+        android:id="@+id/textViewLocation"
+        style="@style/TextViewItemStyle"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/textViewLocation"
-        android:adjustViewBounds="true"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
         android:src="@drawable/ic_web2"
-        android:id="@+id/imageViewWebsite" />
+        android:id="@+id/imageViewWebsite"
+        style="@style/ImageViewItemStyle"/>
 
     <TextView
-        android:text="coffeeland.com"
-        android:textColor="#292021"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/website_info"
         android:layout_below="@id/textViewLocation"
         android:layout_toRightOf="@id/imageViewWebsite"
         android:layout_alignBottom = "@id/imageViewWebsite"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
-        android:id="@+id/textViewWebsite"/>
+        android:id="@+id/textViewWebsite"
+        style="@style/TextViewItemStyle"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/textViewWebsite"
-        android:adjustViewBounds="true"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
         android:src="@drawable/ic_phone2"
-        android:id="@+id/imageViewPhone" />
+        android:id="@+id/imageViewPhone"
+        style="@style/ImageViewItemStyle" />
 
     <TextView
-        android:text="+1 212-363-3180"
-        android:textColor="#292021"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/phone_info"
         android:layout_toRightOf="@id/imageViewPhone"
         android:layout_below="@id/textViewWebsite"
         android:layout_alignBottom = "@id/imageViewPhone"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
-        android:id="@+id/textViewPhone"/>
+        android:id="@+id/textViewPhone"
+        style="@style/TextViewItemStyle"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/imageViewPhone"
-        android:adjustViewBounds="true"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
         android:src="@drawable/ic_time2"
-        android:id="@+id/imageViewTime" />
+        android:id="@+id/imageViewTime"
+        style="@style/ImageViewItemStyle" />
 
     <TextView
-        android:text="Opens at 9:00 AM ~ Closes at 10:00 PM"
-        android:textColor="#292021"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/time_info"
         android:layout_toRightOf="@id/imageViewTime"
         android:layout_below="@id/textViewPhone"
         android:layout_alignBottom = "@id/imageViewTime"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
-        android:id="@+id/textViewTime"/>
+        android:id="@+id/textViewTime"
+        style="@style/TextViewItemStyle"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/imageViewTime"
-        android:adjustViewBounds="true"
-        android:paddingLeft="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="16dp"
         android:src="@drawable/ic_mail2"
-        android:id="@+id/imageViewMail" />
+        android:id="@+id/imageViewMail"
+        style="@style/ImageViewItemStyle" />
 
     <TextView
-        android:text="hello@coffeeland.com"
-        android:textColor="#292021"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:text="@string/mail_info"
         android:layout_toRightOf="@id/imageViewMail"
         android:layout_below="@id/textViewTime"
         android:layout_alignBottom = "@id/imageViewMail"
-        android:paddingLeft="8dp"
-        android:paddingBottom="8dp"
-        android:id="@+id/textViewMail"/>
+        android:id="@+id/textViewMail"
+        style="@style/TextViewItemStyle"/>
 
     <TextView
-        android:text="Details"
-        android:textSize="20sp"
-        android:textStyle=""
-        android:textColor="#292021"
-        android:background="#e1d9ce"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/title_details"
+        android:background="@color/colorTitleBackground"
         android:layout_below="@id/imageViewMail"
-        android:paddingLeft="16dp"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:id="@+id/textViewTitle2"/>
+        android:id="@+id/textViewTitle2"
+        android:layout_marginTop="16dp"
+        style="@style/TextViewTitleStyle"/>
 
     <TextView
-        android:text="Modern, cafeteria-style spot at the Statue of Liberty serving more than 20 kinds of coffee, tea and waffles.."
-        android:textStyle=""
-        android:textColor="#292021"
-        android:background="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:text="@string/text_details"
         android:layout_below="@id/textViewTitle2"
-        android:padding="16dp"
-        android:id="@+id/textViewBody2"/>
-
+        android:id="@+id/textViewBody2"
+        style="@style/TextViewBodyStyle"/>
 </RelativeLayout>

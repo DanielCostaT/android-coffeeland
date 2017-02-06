@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Coffee Land</string>
+    <string name="title_info">Information</string>
+    <string name="location_info">New York, NY 10004, USA</string>
+    <string name="website_info">coffeeland.com</string>
+    <string name="phone_info">+1 212-363-3180</string>
+    <string name="time_info">Opens at 9:00 AM ~ Closes at 10:00 PM</string>
+    <string name="mail_info">hello@coffeeland.com</string>
+    <string name="title_details">Details</string>
+    <string name="text_details">Modern, cafeteria-style spot at the Statue of Liberty serving more than 20 kinds of coffee, tea and waffles..</string>
 </resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.makeitdouble.coffeeland.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/coffee2"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Information"
+        android:textColor="#292021"
+        android:textSize="20sp"
+        android:background="#e1d9ce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:padding="16dp"
+        android:id="@+id/textViewTitle"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:adjustViewBounds="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_location2"
+        android:id="@+id/imageViewLocation" />
+
+    <TextView
+        android:text="New York, NY 10004, USA"
+        android:textColor="#292021"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewLocation"
+        android:layout_alignBottom = "@id/imageViewLocation"
+        android:layout_below="@id/textViewTitle"
+        android:paddingTop="16dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/textViewLocation"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:adjustViewBounds="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/ic_web2"
+        android:id="@+id/imageViewWebsite" />
+
+    <TextView
+        android:text="coffeeland.com"
+        android:textColor="#292021"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:layout_toRightOf="@id/imageViewWebsite"
+        android:layout_alignBottom = "@id/imageViewWebsite"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/textViewWebsite"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWebsite"
+        android:adjustViewBounds="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/ic_phone2"
+        android:id="@+id/imageViewPhone" />
+
+    <TextView
+        android:text="+1 212-363-3180"
+        android:textColor="#292021"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewPhone"
+        android:layout_below="@id/textViewWebsite"
+        android:layout_alignBottom = "@id/imageViewPhone"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/textViewPhone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPhone"
+        android:adjustViewBounds="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/ic_time2"
+        android:id="@+id/imageViewTime" />
+
+    <TextView
+        android:text="Opens at 9:00 AM ~ Closes at 10:00 PM"
+        android:textColor="#292021"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewTime"
+        android:layout_below="@id/textViewPhone"
+        android:layout_alignBottom = "@id/imageViewTime"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/textViewTime"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewTime"
+        android:adjustViewBounds="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:src="@drawable/ic_mail2"
+        android:id="@+id/imageViewMail" />
+
+    <TextView
+        android:text="hello@coffeeland.com"
+        android:textColor="#292021"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewMail"
+        android:layout_below="@id/textViewTime"
+        android:layout_alignBottom = "@id/imageViewMail"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/textViewMail"/>
+
+    <TextView
+        android:text="Details"
+        android:textSize="20sp"
+        android:textStyle=""
+        android:textColor="#292021"
+        android:background="#e1d9ce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMail"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/textViewTitle2"/>
+
+    <TextView
+        android:text="Modern, cafeteria-style spot at the Statue of Liberty serving more than 20 kinds of coffee, tea and waffles.."
+        android:textStyle=""
+        android:textColor="#292021"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTitle2"
+        android:padding="16dp"
+        android:id="@+id/textViewBody2"/>
+
+</RelativeLayout>
